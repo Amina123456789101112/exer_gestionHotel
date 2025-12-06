@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 import { configureStore } from "@reduxjs/toolkit";
 import { createSlice } from "@reduxjs/toolkit";
-import { BrowserRouter,Link,Routes,Route,useParams,useNavigate } from "react-router-dom";
+import { HashRouter,Link,Routes,Route,useParams,useNavigate } from "react-router-dom";
 import { chambres } from "./data";
 import { st } from "./TSlice";
 import { RechercheChambre } from "./RechercheChambre";
@@ -32,6 +32,7 @@ function App(){
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(<BrowserRouter><Provider store={st}><App/></Provider></BrowserRouter>) 
+root.render(<HashRouter><Provider store={st}><App/></Provider></HashRouter>) 
+
 
 
