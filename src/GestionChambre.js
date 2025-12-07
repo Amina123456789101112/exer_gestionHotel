@@ -25,6 +25,7 @@ const button=(d=="ajouter")?(
     <button
     className="button-blue"
     onClick={()=>{
+        console.log({n,r,s,de});
         const m=[];
         (!n)&& m.push("nombreLits")
         (!r)&& m.push("etage")
@@ -97,4 +98,5 @@ function reni(){
     </div>
 
 }
+
 
