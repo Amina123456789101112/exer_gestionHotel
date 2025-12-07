@@ -15,10 +15,36 @@ import { GestionChambre } from "./GestionChambre";
 function App(){
     const a ="ajouter"
     return <div>
-        <p className="p">
-            <Link to="/" className="link">Consulter les chambres</Link>
-            <Link to={`/gestion/${a}`} className="link">Gestion des chambres</Link>
-        </p>
+        <p style={{
+  display: "flex",
+  flexWrap: "wrap",
+  justifyContent: "center",
+  gap: "10px",
+  margin: "20px 0"
+}}>
+  <Link to="/" style={{
+    backgroundColor: "#007bff",
+    color: "white",
+    padding: "8px 12px",
+    borderRadius: "5px",
+    textDecoration: "none",
+    fontWeight: "bold",
+    minWidth: "140px",
+    textAlign: "center"
+  }}>Consulter les chambres</Link>
+
+  <Link to={`/gestion/ajouter`} style={{
+    backgroundColor: "#007bff",
+    color: "white",
+    padding: "8px 12px",
+    borderRadius: "5px",
+    textDecoration: "none",
+    fontWeight: "bold",
+    minWidth: "140px",
+    textAlign: "center"
+  }}>Gestion des chambres</Link>
+</p>
+
         <Routes>
             <Route path="/" element={<div><RechercheChambre/><ConsultationChambre/></div>}></Route>
             <Route path="/gestion/:d" element={<GestionChambre/>}></Route>
@@ -38,6 +64,7 @@ function App(){
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(<HashRouter><Provider store={st}><App/></Provider></HashRouter>) 
+
 
 
 
