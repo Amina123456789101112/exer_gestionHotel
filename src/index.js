@@ -24,7 +24,7 @@ function App(){
   backgroundColor: "black"
 }}>
   <Link to="/" style={{
-    backgroundColor: "#007bff",
+    backgroundColor: "#2d3239",
     color: "white",
     padding: "8px 12px",
     borderRadius: "5px",
@@ -35,7 +35,7 @@ function App(){
   }}>Consulter les chambres</Link>
 
   <Link to={`/gestion/ajouter`} style={{
-    backgroundColor: "#007bff",
+    backgroundColor: "#2d3239",
     color: "white",
     padding: "8px 12px",
     borderRadius: "5px",
@@ -65,6 +65,7 @@ function App(){
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(<HashRouter><Provider store={st}><App/></Provider></HashRouter>) 
+
 
 
 
