@@ -20,7 +20,8 @@ function App(){
   flexWrap: "wrap",
   justifyContent: "center",
   gap: "10px",
-  margin: "20px 0"
+  margin: "20px 0",
+  backgroundColor: "black"
 }}>
   <Link to="/" style={{
     backgroundColor: "#007bff",
@@ -64,6 +65,7 @@ function App(){
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(<HashRouter><Provider store={st}><App/></Provider></HashRouter>) 
+
 
 
 
