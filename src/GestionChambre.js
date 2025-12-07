@@ -30,7 +30,7 @@ const button=(d=="ajouter")?(
         (!r)&& m.push("etage")
         (!s)&& m.push("surface")
         (!de)&& m.push("description");
-        if(m.length==0){
+        if(m.length===0){
             dispatch(ajou({
                 code:c,
                 nombreLits:n,
@@ -50,7 +50,7 @@ const button=(d=="ajouter")?(
         (!r)&& m.push("etage")
         (!s)&& m.push("surface")
         (!de)&& m.push("description");
-        if(m.length==0){
+        if(m.length===0){
             dispatch(mod({
                 code:c,
                 nombreLits:n,
@@ -95,4 +95,5 @@ function reni(){
     <button className="button-gris" onClick={reni}>Rénitialiser</button>
 </div>
     </div>
+
 }
