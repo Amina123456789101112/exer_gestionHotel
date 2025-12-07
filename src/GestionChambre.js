@@ -39,7 +39,7 @@ const button=(d=="ajouter")?(
                 description:de
             }));
             nav("/");
-        }else{alert("il faut entrer :"+m.join(" , "))}
+        }else{window.alert("il faut entrer :"+m.join(" , "))}
     }}>Ajouter</button>
 ):(<span>
     <button
@@ -59,7 +59,7 @@ const button=(d=="ajouter")?(
                 description:de
             }));
             nav("/");
-        } else {alert("il faut entrer :"+m.join(" , "))}
+        } else {window.alert("il faut entrer :"+m.join(" , "))}
     }}>Modifier</button>
     <button className="button-Rouge"
     onClick={()=>{dispatch(sup(c));
@@ -97,3 +97,4 @@ function reni(){
     </div>
 
 }
+
