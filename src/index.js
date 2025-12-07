@@ -55,7 +55,7 @@ function App(){
   bottom: "0",
   width: "100%",
   backgroundColor: "aqua",
-  padding: "10px",marginTop: "80px"}}>@crée par Amina Tourrisse</div>
+  padding: "10px",marginTop: "280px"}}>@crée par Amina Tourrisse</div>
 
     </div>
 
@@ -65,6 +65,7 @@ function App(){
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(<HashRouter><Provider store={st}><App/></Provider></HashRouter>) 
+
 
 
 
