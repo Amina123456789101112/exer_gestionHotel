@@ -47,10 +47,10 @@ const button=(d=="ajouter")?(
     className="button-sfar"
     onClick={()=>{
         const m=[];
-        (!n)&& m.push("nombreLits")
-        (!r)&& m.push("etage")
-        (!s)&& m.push("surface")
-        (!de)&& m.push("description");
+        if (n === undefined || n === null || n === "") m.push("nombreLits");
+        if (r === undefined || r === null || r === "") m.push("etage");
+        if (s === undefined || s === null || s === "") m.push("surface");
+        if (de === undefined || de === null || de === "") m.push("description");
         if(m.length===0){
             dispatch(mod({
                 code:c,
@@ -98,5 +98,6 @@ function reni(){
     </div>
 
 }
+
 
 
