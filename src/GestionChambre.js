@@ -27,10 +27,10 @@ const button=(d=="ajouter")?(
     onClick={()=>{
         console.log({n,r,s,de});
         const m=[];
-        if (n === undefined || n === null || n === "") m.push("nombreLits");
-        if (r === undefined || r === null || r === "") m.push("etage");
-        if (s === undefined || s === null || s === "") m.push("surface");
-        if (de === undefined || de === null || de === "") m.push("description");
+        if (n == undefined || n == null || n == "") m.push("nombreLits");
+        if (r == undefined || r == null || r == "") m.push("etage");
+        if (s == undefined || s == null || s == "") m.push("surface");
+        if (de == undefined || de == null || de == "") m.push("description");
         if(m.length==0){
             dispatch(ajou({
                 code:c,
@@ -47,10 +47,10 @@ const button=(d=="ajouter")?(
     className="button-sfar"
     onClick={()=>{
         const m=[];
-        if (n === undefined || n === null || n === "") m.push("nombreLits");
-        if (r === undefined || r === null || r === "") m.push("etage");
-        if (s === undefined || s === null || s === "") m.push("surface");
-        if (de === undefined || de === null || de === "") m.push("description");
+        if (n == undefined || n == null || n == "") m.push("nombreLits");
+        if (r == undefined || r == null || r == "") m.push("etage");
+        if (s == undefined || s == null || s == "") m.push("surface");
+        if (de == undefined || de == null || de == "") m.push("description");
         if(m.length==0){
             dispatch(mod({
                 code:c,
@@ -98,6 +98,7 @@ function reni(){
     </div>
 
 }
+
 
 
 
