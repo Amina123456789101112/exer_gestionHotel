@@ -50,14 +50,15 @@ function App(){
             <Route path="/" element={<div><RechercheChambre/><ConsultationChambre/></div>}></Route>
             <Route path="/gestion/:d" element={<GestionChambre/>}></Route>
         </Routes>
-        <div style={{textAlign: "center",
-  position: "fixed",
-  bottom: "0",
-  width: "100%",
+        <div style={{
+  textAlign: "center",
   backgroundColor: "aqua",
-  padding: "10px",marginTop: "280px"}}>@crée par Amina Tourrisse</div>
+  padding: "10px",
+  marginTop: "150px"
+}}>
+  @crée par Amina Tourrisse
+</div>
 
-    </div>
 
 }
 
@@ -65,6 +66,7 @@ function App(){
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(<HashRouter><Provider store={st}><App/></Provider></HashRouter>) 
+
 
 
 
