@@ -59,13 +59,14 @@ function App(){
   @crée par Amina Tourrisse
 </div>
 
-
+</div>
 }
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(<HashRouter><Provider store={st}><App/></Provider></HashRouter>) 
+
 
 
 
